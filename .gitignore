@@ -1,10 +1,14 @@
+
+# Spring Boot
 HELP.md
+
+# Maven
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# Spring Tool Suite
 .apt_generated
 .classpath
 .factorypath
@@ -13,13 +17,14 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +34,35 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local application configuration
+application-local.yml
+application-local.yaml
+application-secrets.yml
+application-secrets.yaml
+
+# Logs
+*.log
+logs/
+
+# Local H2 database files
+*.mv.db
+*.trace.db
+
+# Docker local overrides
+docker-compose.override.yml
+
+# Temporary files
+*.tmp
+*.bak
